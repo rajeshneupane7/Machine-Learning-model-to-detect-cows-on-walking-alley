@@ -1,0 +1,1 @@
+# Machine-Learning-model-to-detect-cows-on-walking-alley
