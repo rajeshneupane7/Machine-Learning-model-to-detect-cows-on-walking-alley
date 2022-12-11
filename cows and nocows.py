@@ -7,14 +7,7 @@ import numpy as np
 import cv2
 import os
 
-#file = "C:\\Users\\rajes\\OneDrive\\Desktop\\computer vision\\base data\\training\\abnormal\\c268.jpg"
-#image = cv2.imread(file)
-# img = "C:\Users\rajes\OneDrive\Desktop\computer vision\base data\training\abnormal\c3.jpg"image.load_img("C:\Users\rajes\OneDrive\Desktop\computer vision\base data\training\abnormal\c3.jpg")
-#plt.imshow(image)
-#plt.show()
-#var = cv2.imread("C:\\Users\\rajes\\OneDrive\\Desktop\\computer vision\\base data\\training\\abnormal\\c268.jpg")
 
-#print(var)
 train = ImageDataGenerator(rescale =1/255)
 validation = ImageDataGenerator(rescale =1/255)
 train_dataset = train.flow_from_directory("C:\\Users\\rajes\\OneDrive\\Desktop\\computer vision\\frames\\training",
@@ -70,7 +63,3 @@ if predictions==[[1.]]:
     print("nocows")
 else:
     print("cows")
-#get the np.argmax, means give me the index where probability is max, in this case it got 29. This answers the response
-#you got from your instructor. that is "greatest weight"
-
-import tkinter as tk
